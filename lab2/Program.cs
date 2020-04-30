@@ -27,8 +27,11 @@ namespace lab2
             //Object o = "Stroka"; int io = (int)o; Ошибка исполнения
 
             Object o = 15; 
-            int result = (int)o / 2 + (int) (5 * d); 
+            int result = (int)o / 2 + (int) (5 * d);
             //1 упаковка 1 разупаковка.
+
+            byte[] bytes = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9, 0xF8 };
+            long longFromBytes = ((long)bytes[0] << 56) + ((long)bytes[1] << 48) + ((long)bytes[2] << 40) + ((long)bytes[3] << 32) + ((long)bytes[4] << 24) + ((long)bytes[5] << 16) + ((long)bytes[6] << 8) + (long)bytes[7];
 
         }
     }
