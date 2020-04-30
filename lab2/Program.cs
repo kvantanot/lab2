@@ -33,6 +33,12 @@ namespace lab2
             byte[] bytes = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9, 0xF8 };
             long longFromBytes = ((long)bytes[0] << 56) + ((long)bytes[1] << 48) + ((long)bytes[2] << 40) + ((long)bytes[3] << 32) + ((long)bytes[4] << 24) + ((long)bytes[5] << 16) + ((long)bytes[6] << 8) + (long)bytes[7];
 
+            String number = "-559038737";
+            int numFromString;
+            if (int.TryParse(number, out numFromString))
+            {
+                Console.WriteLine(numFromString);
+            }
         }
     }
 }
