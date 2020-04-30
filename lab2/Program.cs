@@ -39,6 +39,12 @@ namespace lab2
             {
                 Console.WriteLine(numFromString);
             }
+
+            String input = Console.ReadLine();
+            foreach(char c in input)
+            {
+                Console.WriteLine("{0:x}, {0}", (int) c);
+            }
         }
     }
 }
