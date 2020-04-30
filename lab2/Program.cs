@@ -25,6 +25,11 @@ namespace lab2
             double d1 = f;
             //float h = d Ошибка компиляции
             //Object o = "Stroka"; int io = (int)o; Ошибка исполнения
+
+            Object o = 15; 
+            int result = (int)o / 2 + (int) (5 * d); 
+            //1 упаковка 1 разупаковка.
+
         }
     }
 }
