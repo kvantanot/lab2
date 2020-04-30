@@ -17,6 +17,14 @@ namespace lab2
             int i1 = i;//Значимый
             double d = 4.20 + i1;//Значимый
             float f = default(float);//Значимый
+
+            long l = i;
+            float f1 = (float)d;
+            byte bb = (byte)i;
+            decimal dd = (decimal)d;
+            double d1 = f;
+            //float h = d Ошибка компиляции
+            //Object o = "Stroka"; int io = (int)o; Ошибка исполнения
         }
     }
 }
